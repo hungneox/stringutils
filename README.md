@@ -1,4 +1,4 @@
 # stringutils
 
-String utilities for golang
+String utilities for Go
 
