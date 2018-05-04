@@ -22,7 +22,7 @@ func SnakeCase(value string) string {
 		// treat acronym is a word, e.g: JSONData -> json_data
 		if unicode.IsUpper(r) && !nextIsUpper && index > 0 {
 			output += "_" + string(r)
-		} else if r == ' ' {
+		} else if r == ' ' || r == '-' {
 			// Prevent add double "_"
 			if !nextIsUpper {
 				output += "_"

@@ -12,6 +12,8 @@ func TestSnakeCase(t *testing.T) {
 		[]string{" Test Case", "test_case"},
 		[]string{"Test Case ", "test_case"},
 		[]string{" Test Case ", "test_case"},
+		[]string{"test-case", "test_case"},
+		[]string{"many-many-words", "many_many_words"},
 		[]string{"test", "test"},
 		[]string{"test_case", "test_case"},
 		[]string{"Test", "test"},
