@@ -10,4 +10,3 @@ String utilities for Go
 | CamelCase  |  Convert other cases to camelCase |
 | PascalCase | Convert other cases to PascalCase |
 | KebabCase  | Convert other cases to kebab-case |
-
