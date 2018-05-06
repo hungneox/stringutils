@@ -39,8 +39,8 @@ before_script:
 # script always run to completion (set +e). All of these code checks are must haves
 # in a modern Go project.
 script:
-  - go test -v -race ./src/...                          # Run all the tests with the race detector enabled
-  - go vet ./src/...                                    # go vet is the official Go static analyzer
-  - megacheck ./src/...                                 # "go vet on steroids" + linter
+  - go test -v -race ./                                 # Run all the tests with the race detector enabled
+  - go vet ./                                            # go vet is the official Go static analyzer
+  - megacheck ./                                        # "go vet on steroids" + linter
 # - gocyclo -over 19 $GO_FILES                          # forbid code with huge functions
 # - golint -set_exit_status $(go list ./cmd/falcon/...) # one last linter
